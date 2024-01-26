@@ -67,6 +67,10 @@ img {
   transition: color 500ms var(--timing-fun),
     background-color 500ms var(--timing-fun);
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -87,6 +91,53 @@ img {
 }
 .btn-menu:hover,
 .btn-menu:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.nav {
+  display: none;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.nav-link {
+  display: inline-block;
+  color: var(--light-color);
+  font-family: Inter;
+  transition: transform 250ms var(--timing-fun);
+}
+.nav-link:hover,
+.nav-link:focus {
+  transform: scale(1.1);
+}
+.wrapper-burger {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(337deg, #2d2a22 5.7%, #7e6d53 108.98%);
+  padding-top: 80px;
+  text-align: center;
+}
+.wrapper-burger.is-active,
+.wrapper-burger.is-active .nav {
+  display: block;
+}
+.btn-close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+}
+.btn-close-menu:hover,
+.btn-close-menu:focus {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -400,6 +451,8 @@ img {
   font-weight: 500;
   transition: color 250ms var(--timing-fun);
 }
-.agree-link:hover, .agree-link:focus {
+.agree-link:hover,
+.agree-link:focus {
   color: var(--main-color);
 }
+
