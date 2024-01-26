@@ -1,11 +1,15 @@
 .btn {
-    color: var(--accent-color);
-    font-size: 20px;
-    font-weight: 300;
-    line-height: normal;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 16px;
-    transition: color 500ms var(--timing-fun),
-        background-color 500ms var(--timing-fun);
+  color: var(--accent-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  transition: color 500ms var(--timing-fun),
+    background-color 500ms var(--timing-fun);
+  @media screen and (min-width: 768px) {
+    padding: 9px 62px;
+    font-size: 24px;
+  }
 }
