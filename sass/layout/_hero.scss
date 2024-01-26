@@ -1,0 +1,27 @@
+.hero {
+    padding: 95px 0 60px;
+    background-image: url(../images/decor_hero_people.png),
+        url(../images/decor_hero_girl.png), url(../images/bg_hero_mob.jpg);
+    background-size: 44px, 24px, cover;
+    background-position: left 12px bottom 5%, right 20px bottom 5%,
+        top 80px center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.hero-text {
+    font-weight: 300;
+    margin-bottom: 246px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
