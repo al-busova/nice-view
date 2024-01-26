@@ -83,13 +83,19 @@ img {
 .btn-menu {
   background-color: transparent;
   border: none;
+  transition: transform 250ms var(--timing-fun);
+}
+.btn-menu:hover,
+.btn-menu:focus {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .hero {
   padding: 95px 0 60px;
   background-image: url(../images/decor_hero_people.png),
     url(../images/decor_hero_girl.png), url(../images/bg_hero_mob.jpg);
   background-size: 44px, 24px, cover;
-  background-position: left 12px bottom 93px, right 20px bottom 93px,
+  background-position: left 12px bottom 5%, right 20px bottom 5%,
     top 80px center;
   background-repeat: no-repeat;
   text-align: center;
@@ -118,7 +124,7 @@ img {
     url(../images/decor_philosophy_men.png),
     url(../images/bg_philosophy_mob.jpg);
   background-size: 100vw 380px, 78px, cover;
-  background-position: top, right 35px bottom 90px, center;
+  background-position: top, right 19% bottom 12%, center;
   background-repeat: no-repeat;
   padding-bottom: 280px;
 }
@@ -168,6 +174,9 @@ img {
   padding-top: 24px;
   padding-bottom: 32px;
   background-color: var(--light-color);
+}
+.apartment-item:not(:last-child) {
+  margin-bottom: 28px;
 }
 .apartment-title {
   font-size: 28px;
@@ -308,15 +317,29 @@ img {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
+  transition: transform 250ms var(--timing-fun);
 }
 .contact-link p {
   opacity: 0.6;
+}
+.contact-link:hover,
+.contact-link:focus {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .contact-btn {
   width: 100%;
   padding: 14px 0;
   border-radius: 8px;
   font-size: 16px;
+  transition: color 250ms var(--timing-fun),
+    background-color 250ms var(--timing-fun);
+}
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  cursor: pointer;
 }
 .footer {
   padding-top: 20px;
@@ -344,6 +367,7 @@ img {
 }
 .footer-nav-link,
 .footer-contact-link {
+  display: block;
   color: #fff;
   font-family: Inter;
   font-size: 14px;
@@ -356,6 +380,13 @@ img {
   display: block;
   padding: 10px;
   padding-bottom: 0;
+  transition: transform 250ms var(--timing-fun);
+}
+.footer-contact-link:hover,
+.footer-contact-link:focus,
+.social-link:hover,
+.social-link:focus {
+  transform: scale(1.1);
 }
 .agree-text {
   margin-top: 10px;
@@ -367,4 +398,8 @@ img {
 .agree-link {
   color: #fff;
   font-weight: 500;
+  transition: color 250ms var(--timing-fun);
+}
+.agree-link:hover, .agree-link:focus {
+  color: var(--main-color);
 }
