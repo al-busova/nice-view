@@ -1,59 +1,91 @@
 .infrastructure {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .infrastructure-container {
-    width: 100vw;
-    padding: 40px 0;
-    background-image: url(../images/bg_infrastructure_mob.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100vw;
+  padding: 40px 0;
+  background-image: url(../images/bg_infrastructure_tab.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+     padding: 8px 0;
+  }
 }
 
 .infrastructure-title {
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .infrastructure-list {
-    width: 280px;
-    margin: 0 auto;
-    padding: 24px 18px;
-    border-radius: 8px;
-    opacity: 0.8;
-    background: #fcfcfb;
+  width: 280px;
+  margin: 0 auto;
+  padding: 24px 18px;
+  border-radius: 8px;
+  opacity: 0.8;
+  background: #fcfcfb;
+  @media screen and (min-width: 768px) {
+    width: 331px;
+      margin-left: auto;
+      margin-right: 36px;
+      padding: 24px 31px;
+  }
 }
 
 .infrastructure-item {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+   @media screen and (min-width: 768px) {
+     gap: 13px;
+     &:not(:last-child) {
+        margin-bottom: 60px;
+     }
+  }
 }
 
 .infrastructure-item:nth-child(2) .wrapper-infrastructure-time {
-    order: 1;
+  order: 1;
 }
 
 .wrapper-infrastructure-time {
-    width: 101px;
-    height: 101px;
-    border-radius: 50px;
-    border: 1px solid var(--accent-color);
-    display: flex;
-    align-items: center;
+  width: 101px;
+  height: 101px;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+   @media screen and (min-width: 768px) {
+    
+  }
 }
 
 .infrastructure-time {
-    color: var(--accent-color);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+    @media screen and (min-width: 768px) {
+     font-size: 16px;
+  }
 }
 
 .infrastructure-name {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
+   @media screen and (min-width: 768px) {
+     font-size: 16px;
+  }
 }

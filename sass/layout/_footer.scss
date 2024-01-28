@@ -1,74 +1,111 @@
 .footer {
-    padding-top: 20px;
-    padding-bottom: 8px;
-    background: linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%);
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background: linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%);
+  @media screen and (min-width: 768px) {
+    & .container {
+      display: flex;
+      align-items: flex-start;
+      gap: 127px;
+    }
+  }
+}
+.logo.logo-footer {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 10px;
+  }
 }
 
 .footer-list {
-    display: flex;
-    column-gap: 51px;
-    row-gap: 19px;
-    flex-wrap: wrap;
+  display: flex;
+  column-gap: 51px;
+  row-gap: 19px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    gap: 80px;
+  }
 }
 
 .footer-item:nth-child(2) {
-    max-width: 135px;
+  width: 135px;
+  @media screen and (min-width: 768px) {
+    min-width: 219px;
+  }
 }
 
 .footer-title {
-    color: #fff;
-    font-family: Inter;
-    font-size: 18px;
-    margin-bottom: 16px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .footer-nav-item:not(:last-child),
 .footer-contact-item:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-nav-link,
 .footer-contact-link {
-    display: block;
-    color: #fff;
-    font-family: Inter;
-    font-size: 14px;
+  display: block;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .social-links-list {
-    display: flex;
-    margin-left: -10px;
+  display: flex;
+  margin-left: -10px;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-top: -10px;
+  }
 }
 
 .social-link {
-    display: block;
-    padding: 10px;
-    padding-bottom: 0;
-    transition: transform 250ms var(--timing-fun);
+  display: block;
+  padding: 10px;
+  padding-bottom: 0;
+  transition: transform 250ms var(--timing-fun);
 }
 
 .footer-contact-link:hover,
 .footer-contact-link:focus,
 .social-link:hover,
 .social-link:focus {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .agree-text {
-    margin-top: 10px;
-    color: #979797;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: #979797;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    margin-top: 20px;
+  }
 }
 
 .agree-link {
-    color: #fff;
-    font-weight: 500;
-    transition: color 250ms var(--timing-fun);
+  color: #fff;
+  font-weight: 500;
+  transition: color 250ms var(--timing-fun);
 }
 
 .agree-link:hover,
 .agree-link:focus {
-    color: var(--main-color);
+  color: var(--main-color);
 }
