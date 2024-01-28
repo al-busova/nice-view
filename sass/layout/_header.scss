@@ -6,13 +6,14 @@
   z-index: 100;
   padding: 26px 0;
   background: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
-    @media screen and (min-width: 768px) {
-      padding: 35px 0;
+  @media screen and (min-width: 768px) {
+    padding: 35px 0;
   }
 }
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .btn-menu {
   background-color: transparent;
@@ -40,7 +41,10 @@
   gap: 24px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-     gap: 32px;
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
   }
 }
 
@@ -48,6 +52,7 @@
   display: inline-block;
   color: var(--light-color);
   font-family: Inter;
+  color: var(--button-background, #fcfcfb);
   transition: transform 250ms var(--timing-fun);
 }
 
@@ -55,7 +60,26 @@
 .nav-link:focus {
   transform: scale(1.1);
 }
-
+.btn.btn-header {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    padding: 8px 30px;
+    background-color: transparent;
+    color: var(--light-color);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--light-color);
+    transition: color 250ms var(--timing-fun),
+      background-color 250ms var(--timing-fun);
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--light-color);
+      color: var(--main-color);
+    }
+  }
+}
 .wrapper-burger {
   display: none;
   position: absolute;

@@ -7,6 +7,9 @@
       display: flex;
       align-items: flex-start;
       gap: 127px;
+      @media screen and (min-width: 1280px) {
+        gap: 162px;
+      }
     }
   }
 }
@@ -24,7 +27,9 @@
   row-gap: 19px;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
-    gap: 80px;
+    // gap: 80px;
+    justify-content: space-between;
+    flex-grow: 2;
   }
 }
 
@@ -32,6 +37,9 @@
   width: 135px;
   @media screen and (min-width: 768px) {
     min-width: 219px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 283px;
   }
 }
 
@@ -68,6 +76,9 @@
     flex-direction: column;
     margin-top: -10px;
   }
+  @media screen and (min-width: 1280px) {
+    gap: 10px;
+  }
 }
 
 .social-link {
@@ -80,7 +91,7 @@
 .footer-contact-link:hover,
 .footer-contact-link:focus,
 .social-link:hover,
-.social-link:focus {
+.social-link:focus, .footer-nav-link:hover, .footer-nav-link:focus {
   transform: scale(1.1);
 }
 

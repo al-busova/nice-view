@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header  class="header">
       <div class="container">
         <a class="logo link" href="./index.html"
           ><img src="./images/logo.png" alt="logo nice view"
@@ -34,26 +34,26 @@
         <nav class="nav">
           <ul class="list nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link link current">Main page</a>
+              <a href="#home" class="nav-link link current">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Benefits</a>
+              <a href="#about" class="nav-link link">About</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Advantages</a>
+              <a href="#apartments" class="nav-link link">Apartments</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Reviews</a>
+              <a href="#infrastructure" class="nav-link link">Infrastructure</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Contacts</a>
+              <a href="#gallery" class="nav-link link">Gallery</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Order</a>
+              <a href="#contacts" class="nav-link link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!-- <button type="button" class="btn">Contact us</button> -->
+        <button type="button" class="btn btn-header">Contact us</button>
       </div>
       <div class="wrapper-burger">
         <nav class="nav">
@@ -64,39 +64,36 @@
           </button>
           <ul class="list nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link link current">Main page</a>
+              <a href="" class="nav-link link current">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Benefits</a>
+              <a href="" class="nav-link link">About</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Advantages</a>
+              <a href="" class="nav-link link">Apartments</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link link">Reviews</a>
+              <a href="" class="nav-link link">Infrastructure</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Gallery</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link link">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Order</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="container">
           <h1 class="hero-title">Nice view</h1>
-          <p class="hero-text">
-            For your comfortable
-            life with your family
-          </p>
+          <p class="hero-text">For your comfortable life with your family</p>
           <button class="btn hero-btn" type="button">Contact us</button>
         </div>
       </section>
-      <section class="philosophy">
+      <section id="about" class="philosophy">
         <div class="container">
           <div class="wrapper-philosophy">
             <ul class="list philosophy-list">
@@ -114,18 +111,18 @@
               </li>
             </ul>
             <div class="right-box-philosophy">
-               <h2 class="philosophy-title">Philosophy of our company</h2>
-            <p class="philosophy-text">
-              Residential complex “Nice view” is an island of tranquility,
-              security and comfort. <br> In our project, we created the opportunity
-              to lead a measured life in the very center of the city.
-            </p>
+              <h2 class="philosophy-title">Philosophy of our company</h2>
+              <p class="philosophy-text">
+                Residential complex “Nice view” is an island of tranquility,
+                security and comfort. <br />
+                In our project, we created the opportunity to lead a measured
+                life in the very center of the city.
+              </p>
             </div>
-           
           </div>
         </div>
       </section>
-      <section class="apartment">
+      <section id="apartments" class="apartment">
         <div class="container">
           <h2 class="apartment-title">Choose your apartment</h2>
           <ul class="list apartment-list">
@@ -168,34 +165,45 @@
           </button>
         </div>
       </section>
-      <section class="infrastructure">
+      <section id="infrastructure" class="infrastructure">
         <div class="container">
           <h2 class="infrastructure-title">Infrastructure</h2>
         </div>
         <div class="infrastructure-container">
-          <ul class="list infrastructure-list">
-            <li class="infrastructure-item">
-              <div class="wrapper-infrastructure-time">
-                <p class="infrastructure-time">2 <br> minutes walk</p>
-              </div>
-              <p class="infrastructure-name">to the supermarket</p>
-            </li>
-            <li class="infrastructure-item">
-              <div class="wrapper-infrastructure-time">
-                <p class="infrastructure-time">4 <br> minutes walk</p>
-              </div>
-              <p class="infrastructure-name">to the coffee shop</p>
-            </li>
-            <li class="infrastructure-item">
-              <div class="wrapper-infrastructure-time">
-                <p class="infrastructure-time">7 <br> minutes walk</p>
-              </div>
-              <p class="infrastructure-name">to the nearest park</p>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="list infrastructure-list">
+              <li class="infrastructure-item">
+                <div class="wrapper-infrastructure-time">
+                  <p class="infrastructure-time">
+                    2 <br />
+                    minutes walk
+                  </p>
+                </div>
+                <p class="infrastructure-name">to the supermarket</p>
+              </li>
+              <li class="infrastructure-item">
+                <div class="wrapper-infrastructure-time">
+                  <p class="infrastructure-time">
+                    4 <br />
+                    minutes walk
+                  </p>
+                </div>
+                <p class="infrastructure-name">to the coffee shop</p>
+              </li>
+              <li class="infrastructure-item">
+                <div class="wrapper-infrastructure-time">
+                  <p class="infrastructure-time">
+                    7 <br />
+                    minutes walk
+                  </p>
+                </div>
+                <p class="infrastructure-name">to the nearest park</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="container">
           <h2 class="gallery-title">Gallery</h2>
           <ul class="list gallery-list">
@@ -223,7 +231,7 @@
           </ul>
         </div>
       </section>
-      <section class="contact">
+      <section id="contacts" class="contact">
         <div class="container">
           <h2 class="contact-title">Get in touch!</h2>
           <p class="contact-text">Contact us for a quote.</p>
@@ -264,7 +272,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-         <a class="logo logo-footer link" href="./index.html"
+        <a class="logo logo-footer link" href="./index.html"
           ><img src="./images/logo.png" alt="logo nice view"
         /></a>
         <ul class="list footer-list">
@@ -339,13 +347,12 @@
             </ul>
           </li>
         </ul>
-       
       </div>
-       <p class="agree-text">
-          By using this website, you agree to the
-          <a class="agree-link" href="">Terms of Service</a> and
-          <a class="agree-link" href="">Privacy Policy</a>
-        </p>
+      <p class="agree-text">
+        By using this website, you agree to the
+        <a class="agree-link" href="">Terms of Service</a> and
+        <a class="agree-link" href="">Privacy Policy</a>
+      </p>
     </footer>
     <script src="./js/index.js"></script>
   </body>

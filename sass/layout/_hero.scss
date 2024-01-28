@@ -5,7 +5,7 @@
   background-image: url(../images/decor_hero_people.png),
     url(../images/decor_hero_girl.png), url(../images/bg_hero_mob.jpg);
   background-size: 44px, 24px, cover;
-  background-position: left 12px bottom 21%, right 20px bottom 21%, center;
+  background-position: left 12px bottom 19%, right 20px bottom 19%, center;
   background-repeat: no-repeat;
   text-align: center;
   @media screen and (min-width: 768px) {
@@ -14,9 +14,16 @@
     padding-top: 32px;
     background-image: url(../images/decor_hero_people.png),
       url(../images/decor_hero_girl.png), url(../images/bg_hero_tab.jpg);
+    background-size: 85px, 57px, cover;
+    background-position: left 62px bottom 20%, right 100px bottom 20%, center;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/decor_hero_people.png),
+      url(../images/decor_hero_girl.png), url(../images/bg_hero_desk.jpg);
+    background-size: 146px, 88px, cover;
+     background-position: left 62px bottom 18%, right 100px bottom 18%, center;
   }
 }
-
 .hero-title {
   font-size: 48px;
   font-weight: 400;
@@ -24,7 +31,6 @@
     font-size: 72px;
   }
 }
-
 .hero-text {
   font-weight: 300;
   width: 184px;
@@ -36,7 +42,6 @@
     font-size: 24px;
   }
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
   cursor: pointer;
