@@ -1,50 +1,48 @@
 .hero {
-  margin-top: 80px;
-  padding-top: 15px;
-  padding-bottom: 60px;
-  background-image: url(../images/decor_hero_people.png),
-    url(../images/decor_hero_girl.png), url(../images/bg_hero_mob.jpg);
-  background-size: 44px, 24px, cover;
-  background-position: left 12px bottom 19%, right 20px bottom 19%, center;
-  background-repeat: no-repeat;
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    margin-top: 100px;
-    padding-bottom: 100px;
-    padding-top: 32px;
-    background-image: url(../images/decor_hero_people.png),
-      url(../images/decor_hero_girl.png), url(../images/bg_hero_tab.jpg);
-    background-size: 85px, 57px, cover;
-    background-position: left 62px bottom 20%, right 100px bottom 20%, center;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/decor_hero_people.png),
-      url(../images/decor_hero_girl.png), url(../images/bg_hero_desk.jpg);
-    background-size: 146px, 88px, cover;
-     background-position: left 62px bottom 18%, right 100px bottom 18%, center;
-  }
+	padding-top: 15px;
+	padding-bottom: 60px;
+	background-image: url(../images/decor_hero_people.png), url(../images/decor_hero_girl.png),
+		url(../images/bg_hero_mob.jpg);
+	background-size: 44px, 24px, cover;
+	background-position: left 12px bottom 19%, right 20px bottom 19%, center;
+	background-repeat: no-repeat;
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		padding-bottom: 100px;
+		padding-top: 32px;
+		background-image: url(../images/decor_hero_people.png), url(../images/decor_hero_girl.png),
+			url(../images/bg_hero_tab.jpg);
+		background-size: 85px, 57px, cover;
+		background-position: left 62px bottom 20%, right 100px bottom 20%, center;
+	}
+	@media screen and (min-width: 1280px) {
+		background-image: url(../images/decor_hero_people.png), url(../images/decor_hero_girl.png),
+			url(../images/bg_hero_desk.jpg);
+		background-size: 146px, 88px, cover;
+		background-position: left 62px bottom 18%, right 100px bottom 18%, center;
+	}
 }
 .hero-title {
-  font-size: 48px;
-  font-weight: 400;
-  @media screen and (min-width: 768px) {
-    font-size: 72px;
-  }
+	font-size: 48px;
+	font-weight: 400;
+	@media screen and (min-width: 768px) {
+		font-size: 72px;
+	}
 }
 .hero-text {
-  font-weight: 300;
-  width: 184px;
-  margin: 0 auto 246px;
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    margin-top: 7px;
-    margin-bottom: 383px;
-    font-size: 24px;
-  }
+	font-weight: 300;
+	width: 184px;
+	margin: 0 auto 246px;
+	@media screen and (min-width: 768px) {
+		width: 100%;
+		margin-top: 7px;
+		margin-bottom: 383px;
+		font-size: 24px;
+	}
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  cursor: pointer;
-  background-color: var(--main-color);
-  color: var(--light-color);
+	cursor: pointer;
+	background-color: var(--main-color);
+	color: var(--light-color);
 }

@@ -89,7 +89,7 @@
 				<div class="container">
 					<h1 class="hero-title">Nice view</h1>
 					<p class="hero-text">For your comfortable life with your family</p>
-					<button class="btn hero-btn" type="button">Contact us</button>
+					<button class="btn hero-btn" type="button" data-modal-open>Contact us</button>
 				</div>
 			</section>
 			<section id="about" class="philosophy">
@@ -237,7 +237,7 @@
 								</a>
 							</li>
 						</ul>
-						<button class="btn contact-btn" type="button">Contact us</button>
+						<button class="btn contact-btn" type="button" data-modal-open>Contact us</button>
 					</div>
 				</div>
 			</section>
@@ -323,6 +323,32 @@
 				<a class="agree-link" href="">Privacy Policy</a>
 			</p>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal-contact">
+				<button type="button" class="btn-close-menu">
+					<svg width="24" height="24" class="icon-close-menu" data-modal-close>
+						<use href="./images/icons.svg#icon-cross"></use>
+					</svg>
+				</button>
+				<h3 class="modal-contact-title">Leave your contacts and we will contact you</h3>
+				<form class="contact-form">
+					<ladel class="contact-label">
+						Name
+						<input type="text" class="contact-input" name="name" placeholder="Yuliia" />
+					</ladel>
+					<ladel class="contact-label">
+						Telephone
+						<input type="tel" class="contact-input" name="tel" placeholder="+380" />
+					</ladel>
+					<ladel class="contact-label">
+						Email
+						<input type="email" class="contact-input" name="email" placeholder="Contact@gmail.com" />
+					</ladel>
+					<button type="submit" class="btn">Contact us</button>
+				</form>
+			</div>
+		</div>
 		<script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
 	</body>
 </html>

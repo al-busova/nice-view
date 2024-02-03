@@ -4,7 +4,7 @@
 <path fill="none" stroke="#fcfcfb" style="stroke: var(--color1, #fcfcfb)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M32 5.344c0 0-1.027 2.799-2.933 4.531 2.347 13.327-13.787 23.056-26.4 15.459 3.227 0.133 6.453-0.8 8.8-2.665-7.333-1.999-11-9.862-7.333-15.992 3.227 3.465 8.213 5.464 13.2 5.331-1.32-5.597 5.867-8.796 10.267-5.064 1.613 0 4.4-1.599 4.4-1.599z"></path>
 </symbol>
 <symbol id="icon-cross" viewBox="0 0 32 32">
-<path fill="#f5f5f5" style="fill: var(--color2, #f5f5f5)" d="M16 14.115l6.6-6.6 1.885 1.885-6.6 6.6 6.6 6.6-1.885 1.885-6.6-6.6-6.6 6.6-1.885-1.885 6.6-6.6-6.6-6.6 1.885-1.885 6.6 6.6z"></path>
+<path  d="M16 14.115l6.6-6.6 1.885 1.885-6.6 6.6 6.6 6.6-1.885 1.885-6.6-6.6-6.6 6.6-1.885-1.885 6.6-6.6-6.6-6.6 1.885-1.885 6.6 6.6z"></path>
 </symbol>
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path fill="#fcfcfb" style="fill: var(--color1, #fcfcfb)" d="M4 5.333h24v2.667h-24v-2.667zM4 14.667h24v2.667h-24v-2.667zM4 24h24v2.667h-24v-2.667z"></path>

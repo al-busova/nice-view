@@ -1,0 +1,66 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+	@media screen and (min-width: 768px) {
+	}
+	@media screen and (min-width: 1280px) {
+	}
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-contact {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	min-width: 320px;
+	min-height: 520px;
+	padding: 50px 20px;
+	border-radius: 16px;
+	background-color: white;
+	font-family: Montserrat;
+    	color: #35322d;
+	transform: translate(-50%, -50%);
+	& .btn-close-menu {
+		right: 12px;
+		top: 12px;
+		& .icon-close-menu {
+			fill: inherit;
+		}
+	}
+    & .btn {
+        display: block;
+        margin: 28px auto 0;
+        background-color: var(--main-color);
+        color: var(--light-color);
+    }
+}
+.modal-contact-title {
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+.contact-label {
+    display: block;
+    font-size: 14px;
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+.contact-input {
+    color: #999EA3;
+    width: 100%;
+    border: 1px solid #35322D;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+}
