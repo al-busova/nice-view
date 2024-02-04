@@ -52,7 +52,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button type="button" class="btn btn-header">Contact us</button>
+				<button type="button" class="btn btn-header" data-modal-open>Contact us</button>
 			</div>
 			<div class="wrapper-burger">
 				<nav class="nav">
@@ -325,8 +325,8 @@
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal-contact">
-				<button type="button" class="btn-close-menu">
-					<svg width="24" height="24" class="icon-close-menu" data-modal-close>
+				<button type="button" class="btn-close-menu" data-modal-close>
+					<svg width="24" height="24" class="icon-close-menu">
 						<use href="./images/icons.svg#icon-cross"></use>
 					</svg>
 				</button>
@@ -348,7 +348,29 @@
 				</form>
 			</div>
 		</div>
+		<div class="backdrop modal-catalog is-hidden">
+			<div class="wrapper-modal-catalog">
+				<button type="button" class="btn-modal-catalog">
+					<svg width="24" height="24" class="icon-close-menu">
+						<use href="./images/icons.svg#icon-cross"></use>
+					</svg>
+				</button>
+				<img src="./images/download_modal_img.png" alt="Men work with laptop" />
+				<div class="wrapper-modal-catalog">
+					<h3 class="modal-catalog-title">Download the catalog</h3>
+					<p class="modal-catalog-text">We will send you more photos, videos and information by mail</p>
+				</div>
+				<form>
+					<input type="email" name="email" id="email-catalog" placeholder="EMAIL ADRESS" />
+					<button type="submit" class="btn-send-catalog">
+						<svg width="24" height="24" class="icon-close-menu">
+							<use href="./images/icons.svg#icon-send"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
 		<script src="./js/index.js"></script>
-    <script src="./js/modal.js"></script>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

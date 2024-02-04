@@ -1,33 +1,20 @@
-.backdrop {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	opacity: 1;
-}
-.backdrop.is-hidden {
-	opacity: 0;
-	pointer-events: none;
-}
-.modal-contact {
+.wrapper-modal-catalog {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	z-index: 10;
-	min-width: 320px;
-	min-height: 520px;
-	padding: 50px 20px;
+	z-index: 1000;
+	min-width: 290px;
+	min-height: 208px;
+	padding: 24px 20px 32px;
 	border-radius: 16px;
-	background-color: white;
+	background-color: #EDE9E3;
 	font-family: Montserrat;
 	color: #35322d;
 	transform: translate(-50%, -50%);
 	@media screen and (min-width: 768px) {
-		min-width: 530px;
-		min-height: 615px;
-		padding: 60px;
+		min-width: 562px;
+		min-height: 208px;
+		padding: 24px 44px 24px 40px;
 	}
 	@media screen and (min-width: 1280px) {
 	}
